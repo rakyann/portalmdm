@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDMedia Portal</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
+    <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand fw-bold text-danger d-flex align-items-center" href="#">
+            <img src="Assets/logo1.png" alt="MDMedia" width="100" height="50" class="me-2">
+        </a>
+
+        <!-- Navbar Toggle (Mobile) -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" 
+            aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Items -->
+        <div class="collapse navbar-collapse justify-content-between" id="navbarScroll">
+            <ul class="navbar-nav mx-auto my-2 my-lg-0 navbar-nav-scroll">
+                <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Calendar</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="https://calendar.google.com/calendar/u/0/r" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Features
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Feature 1</a></li>
+                        <li><a class="dropdown-item" href="#">Feature 2</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- Profile Section (Selalu di Kanan) -->
+            <div class="d-flex align-items-center">
+                <span class="me-2 text-muted">Hallo, Kirana!</span>
+                <img src="Assets/Profile1.jpg" alt="Profile" class="rounded-circle" width="40" height="40">
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+    <!-- Notifikasi Auto-Slide Full Width -->
+    <div id="notifCarousel" class="carousel slide w-100 m-0 p-0" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-inner text-center">
+            <div class="carousel-item active" style="background-color: #ff4d4d; padding: 8px 0;">
+                <span class="text-white">📢 <strong>Update:</strong> Libur Lebaran 31 Mei 2025</span>
+                <a href="https://calendar.google.com" class="text-white ms-2">See More →</a>
+            </div>
+            <div class="carousel-item" style="background-color: #ffcc00; padding: 8px 0;">
+                <span class="text-white">📅 <strong>Reminder:</strong> Meeting Internal Besok 10.00 AM</span>
+                <a href="https://calendar.google.com" class="text-white ms-2">See More →</a>
+            </div>
+            <div class="carousel-item" style="background-color: #4CAF50; padding: 8px 0;">
+                <span class="text-white">🚀 <strong>New Event:</strong> Webinar Tech 5 Juni 2025</span>
+                <a href="https://calendar.google.com" class="text-white ms-2">See More →</a>
+            </div>
+        </div>
+    </div>
+
+
+<!-- Hero Section -->
+    <main class="position-relative text-white text-center">
+
+    <div class="position-relative overflow-hidden">
+        <img src="Assets/Foto1.png" class="img-fluid w-100" style="height: 832px; object-fit: cover;" alt="Hero Image">
+        <div class="position-absolute start-50 translate-middle w-75" style="top: 60%;">
+          <!-- Status "You're active" -->
+          <div class="d-flex align-items-center justify-content-center mb-3">
+              <div class="spinner-grow" style="width: 10px; height: 10px; color: #00ff00;"></div>
+              <span class="fw-semibold ms-2" style="color: #00ff00;">You're active</span>
+          </div>
+          <h1 class="fw-bold"><em>MDMedia</em> Melaksanakan Rapat Pimpinan (RAPIM)</h1>
+          <p class="lead">Discover in-depth analyses, industry trends, and exclusive insights to stay ahead in your field!</p>
+          <a href="Artikel.html" class="btn btn-danger">See More</a>
+        </div>
+    </div>
+</main>
+
+  
+<!-- News Slider Full Width -->
+    <div class="container-fluid mt-5 p-0" role="region" aria-label="News Slider">
+
+    <div class="d-flex overflow-auto" style="scroll-snap-type: x mandatory; gap: 16px; scrollbar-width: none; -ms-overflow-style: none; padding: 0 16px;">
+        <div class="flex-shrink-0" style="width: 572px; scroll-snap-align: start;">
+            <img src="Assets/Foto1.png" class="img-fluid" style="height: 455px; width: 572px; object-fit: cover;" alt="News 1">
+        </div>
+        <div class="flex-shrink-0" style="width: 572px; scroll-snap-align: start;">
+            <img src="Assets/Foto2.png" class="img-fluid" style="height: 455px; width: 572px; object-fit: cover;" alt="News 2">
+        </div>
+        <div class="flex-shrink-0" style="width: 572px; scroll-snap-align: start;">
+            <img src="Assets/Foto1.png" class="img-fluid" style="height: 455px; width: 572px; object-fit: cover;" alt="News 3">
+        </div>
+        <div class="flex-shrink-0" style="width: 572px; scroll-snap-align: start;">
+            <img src="Assets/Foto2.png" class="img-fluid" style="height: 455px; width: 572px; object-fit: cover;" alt="News 4">
+        </div>
+    </div>
+</div>
+
+
+<div class="container text-center my-5">
+    <h2 class="fw-bold text-danger">BOD</h2>
+    <h3 class="fw-bold">Board Of Directors</h3>
+    <p class="text-muted">Meet our leadership team.</p>
+
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+        <!-- Card 1 -->
+        <div class="col">
+            <div class="card border-0 shadow">
+                <img src="Assets/Profile1.jpg" class="card-img-top" alt="Ahmad Reza">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Ahmad Reza</h5>
+                    <p class="card-text text-muted">Komisaris Utama</p>
+                </div>
+            </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col">
+            <div class="card border-0 shadow">
+                <img src="Assets/Profile1.jpg" class="card-img-top" alt="Chairudin Mirza">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Chairudin Mirza</h5>
+                    <p class="card-text text-muted">Komisaris</p>
+                </div>
+            </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col">
+            <div class="card border-0 shadow">
+                <img src="Assets/Profile1.jpg" class="card-img-top" alt="Rahma Mugiharto">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Rahma Mugiharto</h5>
+                    <p class="card-text text-muted">Komisaris Independent</p>
+                </div>
+            </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="col">
+            <div class="card border-0 shadow">
+                <img src="Assets/Profile1.jpg" class="card-img-top" alt="Arif Prabowo">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Arif Prabowo</h5>
+                    <p class="card-text text-muted">Direktur Utama</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Performance Report -->
+    <div class="container mt-5" role="region" aria-label="Performance Report">
+
+    <div class="position-relative rounded overflow-hidden" style="cursor: pointer;" onclick="window.open('https:https://youtu.be/7C8yehrCkgU?si=AXGynp4l1PhIco_Rhttps://youtu.be/7C8yehrCkgU?si=2fbMjzhlJ8xt54vF', '_blank')">
+        <img src="Assets/Foto1.png" class="img-fluid opacity-75" alt="Video Thumbnail">
+        <div class="position-absolute top-50 start-50 translate-middle text-white text-center">
+            <h5 class="fw-bold">Performance Report</h5>
+            <button class="btn btn-light rounded-circle p-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                    <path d="M11.596 8.697l-5.197 3.478A1 1 0 0 1 5 11.383V4.617a1 1 0 0 1 1.399-.892l5.197 3.478a1 1 0 0 1 0 1.494z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- News Section -->
+    <section id="news" class="py-5" aria-labelledby="news-section">
+
+    <div class="container">
+        <h6 class="text-danger text-center">News</h6>
+        <h2 class="text-center fw-bold">MDMedia News</h2>
+        <p class="text-center text-muted">
+            MD Media Performance Report covers business performance, product innovation, and corporate governance.
+            In 2022, MD Media achieved a GCG score of 81.74 ("Good" category) and focused on strengthening its business in 2023.
+        </p>
+        <div class="text-end text-danger">
+            <a href="Artikel.html" class="text-danger text-decoration-none">See More →</a>
+        </div>
+
+        <div class="row mt-4">
+            <!-- Berita Utama (Auto-play Carousel) -->
+            <div class="col-md-7">
+                <div id="newsCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="news1.html">
+                                <img src="Assets/Foto1.png" class="d-block w-100" alt="News 1" style="height: 400px; object-fit: cover;">
+                            </a>
+                            <div class="carousel-caption text-start bg-dark bg-opacity-50 p-3">
+                                <small class="text-light">#Rapim</small>
+                                <h5 class="text-light">MD Media melaksanakan Rapat Pimpinan (RAPIM)</h5>
+                                <p class="text-light">23 May, 2025 | 37 Viewers</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="news2.html">
+                                <img src="Assets/Foto2.png" class="d-block w-100" alt="News 2" style="height: 400px; object-fit: cover;">
+                            </a>
+                            <div class="carousel-caption text-start bg-dark bg-opacity-50 p-3">
+                                <small class="text-light">#Inovasi</small>
+                                <h5 class="text-light">MD Media mengembangkan layanan digital</h5>
+                                <p class="text-light">21 May, 2025 | 25 Viewers</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="news3.html">
+                                <img src="Assets/Foto1.png" class="d-block w-100" alt="News 3" style="height: 400px; object-fit: cover;">
+                            </a>
+                            <div class="carousel-caption text-start bg-dark bg-opacity-50 p-3">
+                                <small class="text-light">#Teknologi</small>
+                                <h5 class="text-light">MD Media sukses dengan inovasi teknologi baru</h5>
+                                <p class="text-light">10 May, 2025 | 50 Viewers</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#newsCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#newsCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- List Berita (Terbaru & Populer) -->
+            <div class="col-md-5">
+                <!-- Breadcrumb -->
+                <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
+                    <ol class="breadcrumb" role="tablist">
+                        <li class="breadcrumb-item" role="presentation">
+                            <a href="#" id="latest-tab" class="text-danger text-decoration-none fw-bold active" data-bs-toggle="pill" data-bs-target="#latest" role="tab" aria-controls="latest" aria-selected="true" style="cursor: pointer;">Terbaru</a>
+                        </li>
+                        <li class="breadcrumb-item" role="presentation">
+                            <a href="#" id="popular-tab" class="text-dark text-decoration-none fw-bold" data-bs-toggle="pill" data-bs-target="#popular" role="tab" aria-controls="popular" aria-selected="false" style="cursor: pointer;">Terpopuler</a>
+                        </li>
+                    </ol>
+                </nav>
+
+                <div class="tab-content">
+                    <!-- Berita Terbaru -->
+                    <div class="tab-pane fade show active" id="latest" role="tabpanel" aria-labelledby="latest-tab">
+                        <div class="card border-0 shadow-sm mb-3">
+                            <div class="card-body">
+                                <a href="news1.html" class="text-dark text-decoration-none">
+                                    <h6 class="fw-bold mb-1">MD Media melaksanakan Rapat Pimpinan (RAPIM)</h6>
+                                    <p class="text-muted small mb-0">23 May, 2025 | 37 Viewers</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card border-0 shadow-sm mb-3">
+                            <div class="card-body">
+                                <a href="news2.html" class="text-dark text-decoration-none">
+                                    <h6 class="fw-bold mb-1">MD Media mengembangkan layanan digital</h6>
+                                    <p class="text-muted small mb-0">21 May, 2025 | 25 Viewers</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- Berita Populer -->
+                    <div class="tab-pane fade" id="popular" role="tabpanel" aria-labelledby="popular-tab">
+                        <div class="card border-0 shadow-sm mb-3">
+                            <div class="card-body">
+                                <a href="news3.html" class="text-dark text-decoration-none">
+                                    <h6 class="fw-bold mb-1">MD Media sukses dengan inovasi teknologi baru</h6>
+                                    <p class="text-muted small mb-0">10 May, 2025 | 50 Viewers</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card border-0 shadow-sm mb-3">
+                            <div class="card-body">
+                                <a href="news4.html" class="text-dark text-decoration-none">
+                                    <h6 class="fw-bold mb-1">Meningkatkan layanan pelanggan</h6>
+                                    <p class="text-muted small mb-0">5 May, 2025 | 40 Viewers</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade show active" id="latest" role="tabpanel" aria-labelledby="latest-tab">
+                        <div class="card border-0 shadow-sm mb-3">
+                            <div class="card-body">
+                                <a href="news1.html" class="text-dark text-decoration-none">
+                                    <h6 class="fw-bold mb-1">MD Media melaksanakan Rapat Pimpinan (RAPIM)</h6>
+                                    <p class="text-muted small mb-0">23 May, 2025 | 37 Viewers</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card border-0 shadow-sm mb-3">
+                            <div class="card-body">
+                                <a href="news2.html" class="text-dark text-decoration-none">
+                                    <h6 class="fw-bold mb-1">MD Media mengembangkan layanan digital</h6>
+                                    <p class="text-muted small mb-0">21 May, 2025 | 25 Viewers</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Events Section -->
+<section id="events" class="py-5" aria-labelledby="events-section">
+    <div class="container">
+        <h6 class="text-danger text-center">Event</h6>
+        <h2 class="fw-bold text-center">Exciting Events at <em>MDMedia</em></h2>
+        <p class="text-muted text-center">
+            At MDMedia, we believe in fostering a dynamic and engaging work environment through various office events. 
+            From insightful leadership talks and innovation workshops to fun employee gatherings and team-building activities, 
+            our events are designed to inspire, connect, and motivate our workforce. Stay updated and be part of the experience!
+        </p>
+
+        <div class="row mt-5 gx-4 gy-4">
+            <!-- Event 1 -->
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm p-3 rounded-4 h-100">
+                    <div class="card-body d-flex flex-column text-start">
+                        <p class="text fw-bold">Updates 🔔</p>
+                        <h5 class="fw-semibold mt-2">Leadership Talk Series: Insights from Industry Experts</h5>
+                        <div class="mt-4">
+                            <button class="btn btn-outline-dark rounded-pill">
+                                Save The Date →
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event 2 -->
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm p-3 rounded-4 h-100">
+                    <div class="card-body d-flex flex-column text-start">
+                        <p class="text fw-bold">Updates 🎉</p>
+                        <h5 class="fw-semibold mt-2">Innovation Day: Empowering Creativity</h5>
+                        <div class="mt-4">
+                            <button class="btn btn-outline-dark rounded-pill">
+                                Save The Date →
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event 3 -->
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm p-3 rounded-4 h-100">
+                    <div class="card-body d-flex flex-column text-start">
+                        <p class="text fw-bold">Updates 🎊</p>
+                        <h5 class="fw-semibold mt-2">Team Building: Strengthening Connections</h5>
+                        <div class="mt-4">
+                            <button class="btn btn-outline-dark rounded-pill">
+                                Save The Date →
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="bg-light text-center text-lg-start">
+    <div class="text-center p-3">
+        © 2025 MDMedia. All rights reserved.
+    </div>
+</footer>
+
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
